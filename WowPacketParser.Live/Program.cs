@@ -24,7 +24,7 @@ async Task ReadLoop(IPacketReader reader, WebSocketServer server)
 
 var host = "127.0.0.1";
 var port = 8888;
-var file = args.Length > 0 ? args[1] : "/azerothcore/logs/World.pkt";
+var file = args.Length > 0 ? args[0] : "/azerothcore/logs/World.pkt";
 for (int i = 1; i < args.Length; i++)
 {
     string opt = args[i];
